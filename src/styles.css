@@ -1,22 +1,22 @@
 :root {
   --main-fontWeight: 600;
   --main-violet: rgba(189, 5, 240);
+  --main-FSize: 80px;
 }
-header a {
+header a:hover {
   color: var(--main-violet) !important;
 }
 header a.logo {
   font-weight: var(--main-fontWeight);
 }
-body {
-  padding: 10px;
-}
+
 body > * {
   margin-bottom: 10px;
 }
 .hello {
   font-size: 40px;
   font-weight: var(--main-fontWeight);
+  font-size: var(--main-FSize);
 }
 .name {
   font-size: 50px;
@@ -30,13 +30,18 @@ body > * {
 }
 .aboutMe_small {
   font-size: 30px;
-  font-weight: var(--main-fontWeight);
+  font-weight: 300;
+  opacity: 0.8;
   line-height: 40px;
 }
 .aboutPr_small {
   font-size: 30px;
   font-weight: 300;
   line-height: 40px;
+}
+.article_small {
+  line-height: 1.5;
+  padding: 20px 0;
 }
 .buttons,
 .big_info {
@@ -113,9 +118,19 @@ a {
 .buttons button:hover a {
   color: rgba(0, 217, 255, 0.473);
 }
-a:visited {
-  color: salmon;
+.contacts {
+  font-size: 25px;
+  padding: 20px;
 }
-/* .button {
-  display: block;
-} */
+.contacts a:first-child {
+  color: rgba(93, 88, 88, 0.717);
+}
+.contacts a:first-child:hover {
+  color: rgba(93, 88, 88, 0.998);
+}
+.contacts a:nth-child(2) {
+  text-transform: lowercase;
+}
+.contacts a:nth-child(2):hover {
+  text-decoration: underline;
+}
